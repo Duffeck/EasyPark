@@ -9,7 +9,7 @@ package model;
  *
  * @author lucas.duffeck
  */
-public class Pessoa {
+public abstract class Pessoa {
     
     private String nome, cpf, telefone, email;
 
