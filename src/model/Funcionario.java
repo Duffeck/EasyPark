@@ -13,7 +13,7 @@ public class Funcionario extends Pessoa{
     
     private float Salario, horasSemanais;
     private String turno, cargo;
-
+   
     public float getSalario() {
         return Salario;
     }

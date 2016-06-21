@@ -17,10 +17,12 @@ public class Mensalista extends Pessoa{
     
     private Date dataPgto;
     private List<Veiculo> veiculos;
+    private List<FaturaMensal> faturas;
     
     public Mensalista(){
         super();
         veiculos = new ArrayList<Veiculo>(0);
+        faturas = new ArrayList<FaturaMensal>(0);
     }
     
     public Date getDataPgto() {
@@ -31,5 +33,11 @@ public class Mensalista extends Pessoa{
         this.dataPgto = dataPgto;
     }
     
-    
+    public List<Veiculo> getVeiculos() {
+        return veiculos;
+    }
+
+    public void setVeiculos(List<Veiculo> veiculos) {
+        this.veiculos = veiculos;
+    }
 }

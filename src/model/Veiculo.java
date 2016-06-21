@@ -11,8 +11,18 @@ package model;
  */
 public class Veiculo {
     
+    private int id;
     private String placa, modelo, cor;
     private Mensalista dono;
+    private TipoVeiculo tipo;
+    
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getPlaca() {
         return placa;
@@ -46,5 +56,11 @@ public class Veiculo {
         this.dono = dono;
     }
     
-    
+    public TipoVeiculo getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoVeiculo tipo) {
+        this.tipo = tipo;
+    }
 }
