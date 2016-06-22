@@ -14,6 +14,7 @@ public class Lavagem {
     private int id;
     private String descricao;
     private float valor;
+    private Comprovante comprovante;
 
     public int getId() {
         return id;
@@ -37,5 +38,13 @@ public class Lavagem {
 
     public void setValor(float valor) {
         this.valor = valor;
+    }
+    
+    public Comprovante getComprovante() {
+        return comprovante;
+    }
+
+    public void setComprovante(Comprovante comprovante) {
+        this.comprovante = comprovante;
     }
 }

@@ -17,6 +17,7 @@ public class NFE {
     private int numero;
     private float valor;
     private String xml;
+    private Pagamento pagamento;
 
     public int getId() {
         return id;
@@ -56,5 +57,13 @@ public class NFE {
 
     public void setXml(String xml) {
         this.xml = xml;
+    }
+    
+    public Pagamento getPagamento() {
+        return pagamento;
+    }
+
+    public void setPagamento(Pagamento pagamento) {
+        this.pagamento = pagamento;
     }
 }

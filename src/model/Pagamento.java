@@ -12,6 +12,9 @@ package model;
 public class Pagamento {
     private int id;
     private String tipo;
+    private Comprovante comprovante;
+    private FaturaMensal fatura;
+    private NFE notaFiscal;
 
     public int getId() {
         return id;
@@ -29,4 +32,27 @@ public class Pagamento {
         this.tipo = tipo;
     }
     
+    public Comprovante getComprovante() {
+        return comprovante;
+    }
+
+    public void setComprovante(Comprovante comprovante) {
+        this.comprovante = comprovante;
+    }
+
+    public FaturaMensal getFatura() {
+        return fatura;
+    }
+
+    public void setFatura(FaturaMensal fatura) {
+        this.fatura = fatura;
+    }
+
+    public NFE getNotaFiscal() {
+        return notaFiscal;
+    }
+
+    public void setNotaFiscal(NFE notaFiscal) {
+        this.notaFiscal = notaFiscal;
+    }
 }

@@ -5,6 +5,9 @@
  */
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author lucas.duffeck
@@ -13,6 +16,11 @@ public class Funcionario extends Pessoa{
     
     private float Salario, horasSemanais;
     private String turno, cargo;
+    private List<Comprovante> comprovantes;
+    
+    public Funcionario(){
+        comprovantes = new ArrayList(0);
+    }
    
     public float getSalario() {
         return Salario;
@@ -46,5 +54,11 @@ public class Funcionario extends Pessoa{
         this.cargo = cargo;
     }
     
-    
+    public List<Comprovante> getComprovantes() {
+        return comprovantes;
+    }
+
+    public void setComprovantes(List<Comprovante> comprovantes) {
+        this.comprovantes = comprovantes;
+    }
 }

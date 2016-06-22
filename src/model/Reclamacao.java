@@ -17,7 +17,8 @@ public class Reclamacao {
     private String reclamacao;
     private Date dataAbetura;
     private Date dataEncerramento;
-
+    private Comprovante comprovante;
+    
     public int getId() {
         return id;
     }
@@ -49,5 +50,12 @@ public class Reclamacao {
     public void setDataEncerramento(Date dataEncerramento) {
         this.dataEncerramento = dataEncerramento;
     }
- 
+    
+    public Comprovante getComprovante() {
+        return comprovante;
+    }
+
+    public void setComprovante(Comprovante comprovante) {
+        this.comprovante = comprovante;
+    }
 }

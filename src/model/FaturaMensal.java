@@ -19,7 +19,6 @@ public class FaturaMensal {
     private float valor;
     private Mensalista mensalista;
     private Pagamento pagamento;
-    private NFE notaFical;
     
     public int getId() {
         return id;
@@ -67,13 +66,5 @@ public class FaturaMensal {
 
     public void setPagamento(Pagamento pagamento) {
         this.pagamento = pagamento;
-    }
-    
-    public NFE getNotaFical() {
-        return notaFical;
-    }
-
-    public void setNotaFical(NFE notaFical) {
-        this.notaFical = notaFical;
     }
 }

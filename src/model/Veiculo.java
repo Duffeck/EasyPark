@@ -5,6 +5,9 @@
  */
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author lucas.duffeck
@@ -15,6 +18,11 @@ public class Veiculo {
     private String placa, modelo, cor;
     private Mensalista dono;
     private TipoVeiculo tipo;
+    private List comprovantes;
+    
+    public Veiculo(){
+        comprovantes = new ArrayList<Comprovante>(0);
+    }
     
     public int getId() {
         return id;
@@ -62,5 +70,13 @@ public class Veiculo {
 
     public void setTipo(TipoVeiculo tipo) {
         this.tipo = tipo;
+    }
+    
+    public List getComprovantes() {
+        return comprovantes;
+    }
+
+    public void setComprovantes(List comprovantes) {
+        this.comprovantes = comprovantes;
     }
 }

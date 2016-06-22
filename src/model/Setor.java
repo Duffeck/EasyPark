@@ -5,6 +5,9 @@
  */
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author renan
@@ -15,6 +18,11 @@ public class Setor {
     private String nome;
     private int maxVagas;
     private int vagasLivres;    
+    private List comprovantes;
+    
+    public Setor(){
+        comprovantes = new ArrayList<Comprovante>(0);
+    }
 
     public int getId() {
         return id;
@@ -46,5 +54,13 @@ public class Setor {
 
     public void setVagasLivres(int vagasLivres) {
         this.vagasLivres = vagasLivres;
+    }
+    
+    public List getComprovantes() {
+        return comprovantes;
+    }
+
+    public void setComprovantes(List comprovantes) {
+        this.comprovantes = comprovantes;
     }
 }
